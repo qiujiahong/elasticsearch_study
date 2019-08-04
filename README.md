@@ -9,5 +9,7 @@
 * [安装中文分词器](docs/chinese.md)
 * [使用kabana增删改查](docs/use_kabana.md)
 * [批量获取文档](docs/multi_api.md)
+* [批量操作](docs/bulk_api.md)
+
 
 
