@@ -58,6 +58,10 @@ curl http://127.0.0.1:9200
 ```bash
 # vim config/elasticsearch.yml  修改文件
 network.host: 192.168.30.11
+# 末尾添加
+http.cors.enabled: true
+http.cors.allow-origin: '*'
+#  http.cors.allow-origin: /http?:\/\/192.168.10.139(:[0-9]+)?/
 ```
 
 * 配置系统参数，设置用户打开最大文件数   vim /etc/security/limits.conf 文件末尾追加  

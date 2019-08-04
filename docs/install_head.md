@@ -17,8 +17,8 @@ tar -xzvf node-v10.16.1-linux-x64.tar.gz -C /opt/
 
 ```
 export NODE_HOME=/opt/node-v10.16.1-linux-x64/
-export PATH=$PATH:$NODE_HOME/bin  
 export NODE_PATH=$NODE_HOME/lib/node_modules 
+export PATH=$PATH:$NODE_HOME/bin  
 ```
 * 设置国内npm 源头
 
@@ -69,4 +69,13 @@ npm install
 # this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http://localhost:9200";
 # 修改后内容
 this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http://192.168.30.11:9200";
+```
+
+
+* 启动head 
+
+```bash
+node_modules/grunt/bin/grunt server
+# 访问该地址，可以通过head查看es的运行状况
+# http://192.168.30.11:9100/
 ```
