@@ -35,3 +35,6 @@ POST /libs/books/_bulk
 { "update": {"_index":"libs1","_type":"students","_id":2}}
 { "doc": {"age":25}}
 ```
+
+
+> bulk加载到内存内处理，所以一次建议不要太多。具体个数和电脑配置有关，建议不要多余1000~5000个。
