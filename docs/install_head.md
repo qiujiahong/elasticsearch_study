@@ -72,6 +72,16 @@ this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http:
 ```
 
 
+* 开启9100端口 
+
+```
+systemctl start firewalld.service
+firewall-cmd --premanent --zone=public --add-port=9100/tcp
+firewall-cmd --reload
+```
+
+
+
 * 启动head 
 
 ```bash

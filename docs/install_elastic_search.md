@@ -89,6 +89,14 @@ sysctl -p
 systemctl stop firewalld
 ```
 
+* 开启9200端口 
+
+```
+systemctl start firewalld.service
+firewall-cmd --premanent --zone=public --add-port=9200/tcp
+firewall-cmd --reload
+```
+
 
 * 再次启动es  
 
