@@ -88,13 +88,13 @@ systemctl stop firewalld
 
 * 再次启动es  
 
-```
+```bash
 su esuser
 cd /opt/elasticsearch-6.8.1/bin
 # 后台启动
-#  ./elasticsearch -d  
+ ./elasticsearch -d  
 #  前台启动
-./elasticsearch
+# ./elasticsearch
 # 检验是否启动成功,在网络通畅的另外一台主机上执行如下命令,也可以打开浏览器访问
 curl http://192.168.30.11:9200
 ```
